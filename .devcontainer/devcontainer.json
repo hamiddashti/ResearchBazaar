@@ -1,5 +1,10 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-  }
+  "settings": {
+      "workspaceFolder": "." // Current directory as workspace
+  },
+  "extensions": [
+      "ms-python.python" // Python extension
+  ],
+  "postCreateCommand": "conda env create -f environment.yml && conda activate my-env" // Install and activate conda environment
 }
