@@ -6,5 +6,5 @@
   "extensions": [
       "ms-python.python" // Python extension
   ],
-  "postCreateCommand": "conda env create -f environment.yml && conda activate my-env" // Install and activate conda environment
+  "postCreateCommand": "conda env create -f environment.yml && conda activate rb2024" // Install and activate conda environment
 }
