@@ -1,10 +1,13 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/miniconda:latest", // Use a base image with conda pre-installed
   "settings": {
-      "workspaceFolder": "." // Current directory as workspace
+      "workspaceFolder": "."
   },
   "extensions": [
-      "ms-python.python" // Python extension
+      "ms-python.python"
   ],
-  "postCreateCommand": "conda env create -f environment.yml && conda activate rb2024" // Install and activate conda environment
+  "postCreateCommand": [
+      "conda env create -f environment.yml",
+      "SHELL=/bin/bash conda activate rb2024" // Ensure bash as default shell for activation
+  ]
 }
