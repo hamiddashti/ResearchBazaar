@@ -1,20 +1,7 @@
 name: rb24
 channels:
-  - conda-forge
+  - defaults
 dependencies:
-  - bzip2=1.0.8=h1de35cc_0
-  - ca-certificates=2023.12.12=hecd8cb5_0
-  - libffi=3.4.4=hecd8cb5_0
-  - ncurses=6.4=hcec6c5f_0
-  - openssl=3.0.13=hca72f7f_0
-  - pip=23.3.1=py311hecd8cb5_0
-  - python=3.11.7=hf27a42d_0
-  - readline=8.2=hca72f7f_0
-  - setuptools=68.2.2=py311hecd8cb5_0
-  - sqlite=3.41.2=h6c40b1e_0
-  - tk=8.6.12=h5d9f67b_0
-  - tzdata=2023d=h04d1e81_0
-  - wheel=0.41.2=py311hecd8cb5_0
-  - xz=5.4.5=h6c40b1e_0
-  - zlib=1.2.13=h4dc903c_0
+  - python=3.11.7
+  - conda-forge::bzip2
 prefix: /Users/hamiddashti/miniconda3/envs/rb24
