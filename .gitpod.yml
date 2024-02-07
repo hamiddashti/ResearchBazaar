@@ -1,20 +1,6 @@
-# Image of workspace. Learn more: https://www.gitpod.io/docs/configure/workspaces/workspace-image
-image: gitpod/workspace-full:latest
+image: gitpod.io/miniforge:python-3.11
 
-# List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
-tasks:
-  - name: Install Conda
-    command: |
-      wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-      bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
-      export PATH="$HOME/miniconda/bin:$PATH"
-      conda init bash
-
-  - name: Activate Conda environment
-    command: |
-      source $HOME/miniconda/etc/profile.d/conda.sh
-      conda activate base  # Replace 'base' with your conda environment name
-
-  - name: Script Task
-    init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-    command: echo 'start script'
+conda-env:
+  run: |
+    conda activate rb24  # Replace with your environment name
+    mamba install matplotlib  # Specify packages to install
