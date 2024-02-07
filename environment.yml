@@ -1,6 +1,5 @@
 name: rb24
 channels:
-  - defaults
   - conda-forge
 dependencies:
   - bzip2=1.0.8=h1de35cc_0
