@@ -1,13 +1,15 @@
-name: rb24
+name: rb
 channels:
   - defaults
+  - conda-forge
 dependencies:
-  - python=3.11.7
-  - conda-forge::bzip2
+  - python=3.11
+  - ipykernel
+  - xarray
   - matplotlib
   - bottleneck
   - dask
   - netcdf4
-  - xarray
   - hvplot
-prefix: /Users/hamiddashti/miniconda3/envs/rb24
+  - geoviews-core
+prefix: /Users/hamiddashti/miniconda3/envs/rb
