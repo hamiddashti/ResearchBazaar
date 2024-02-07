@@ -1,11 +1,31 @@
-tasks:
-  - name: Install Conda
-    command: |
-      wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-      bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
-      export PATH="$HOME/miniconda/bin:$PATH"
-      conda init bash
+# Image of workspace (using a pre-built Conda image)
+image: gitpod/workspace-full:latest
 
-  - name: Create Conda environment from environment.yml
-    command: |
-      conda env create -f environment.yml
+# List the start up tasks
+tasks:
+  - name: Install Conda (if not using a pre-built image)
+    # Only include this task if you're not using a pre-built Conda image
+    run: |
+      wget -c https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh
+      bash Mambaforge-$(uname)-$(uname -m).sh -b -p "${HOME}/conda"
+      source "${HOME}/conda/etc/profile.d/conda.sh"
+      source "${HOME}/conda/etc/profile.d/mamba.sh"
+
+  - name: Create Conda Environment
+    run: |
+      conda env create -f environment.yml  # Replace with your environment file name
+
+  - name: Activate Conda Environment
+    run: |
+      conda activate myenv  # Replace with your environment name
+
+  - name: Script Task
+    init: echo 'init script'
+    command: echo 'start script'
+
+# List the ports to expose
+ports:
+  - name: Frontend
+    description: Port 3000 for the frontend
+    port: 3000
+    onOpen: open-preview
