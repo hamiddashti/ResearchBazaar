@@ -4,4 +4,5 @@ channels:
 dependencies:
   - python=3.11.7
   - conda-forge::bzip2
+  - matplotlib
 prefix: /Users/hamiddashti/miniconda3/envs/rb24
