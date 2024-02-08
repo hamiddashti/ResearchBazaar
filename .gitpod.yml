@@ -1,6 +1,0 @@
-image: gitpod.io/miniforge:python-3.11
-
-conda-env:
-  run: |
-    conda activate rb24  # Replace with your environment name
-    mamba install matplotlib  # Specify packages to install
