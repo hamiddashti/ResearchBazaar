@@ -58,3 +58,4 @@ Click the link below to open the notebook directly in Google Colab:
 
 - In Google Colab, you can create a new notebook and copy-paste the code from the shared link for hands-on practice.
 - Setting up your own environment gives you more control and flexibility but requires more initial effort.
+- Use [data link](https://drive.google.com/file/d/1IxU95a6sVGKQZysrF2-g807bMjUw1Tvb/view?usp=sharing) If for any reason you failed to download the course materials from the script.
