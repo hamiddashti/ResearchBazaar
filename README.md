@@ -1,3 +1,4 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hamiddashti/ResearchBazaar.git/HEAD)
 # Research Bazaar 2024 UW-Madison: Getting Started with Python for Climate & Satellite Data Analysis
 
 This repository contains the code for the **Getting Started with Python for Analyzing Large Climate and Satellite Data** workshop held at the Research Bazaar 2024: [https://datascience.wisc.edu/data-science-research-bazaar/](https://datascience.wisc.edu/data-science-research-bazaar/) at the University of Wisconsin-Madison.
@@ -53,6 +54,11 @@ Click the link below to open the notebook directly in Google Colab:
    - Open ResearchBazaar.ipynb in VS Code.
    - Make sure "rb24" is selected as the kernel in the Jupyter Notebook toolbar.
    - Run the code cells one by one or in batches.
+
+**3. My Binder Access:**
+
+Feel free to access the interactive notebook via the following link: [https://mybinder.org/v2/gh/hamiddashti/ResearchBazaar.git/HEAD](https://mybinder.org/v2/gh/hamiddashti/ResearchBazaar.git/HEAD). However, please be aware that MyBinder has limited memory capacity, and your code might crash due to these constraints.
+
 
 **Tips:**
 
